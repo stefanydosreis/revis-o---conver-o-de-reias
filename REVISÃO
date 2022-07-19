@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Cotação de Produto</title>
+</head>
+<body>
+    <form class="pure-form pure-form-stacked">
+        <fieldset>
+        <label for="inProduto"> Produto</label>
+        <input type="text" id="inProduto">
+        <label for="inValor"> Valor do produto em US$</label>
+        <input type="number" id="inValor">
+        <label for="inDolar"> Dolar</label>
+        <input type="number" id="inDolar">
+        <label for="inImposto"> Imposto</label>
+        <input type="number" id="inImposto">
+        <input type="button" value="calcular" id="btnCalcular" class=" pure-button pure-button-primary">
+    </fieldset>
+    </form>
+    <table class="pure-table pure-table-bordered">
+        <thead>
+            <tr>
+                <th> Produto</th>
+                <th> valor em Dolar$</th>
+                <th> valor em Reais $</th>
+                <th> Valor do Imposto$</th>
+            </tr>
+        </thead>
+    </table>
+    <script src="javascript.js"></script>
+</body>
+</html>
